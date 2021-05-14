@@ -29,13 +29,13 @@
                 </ul>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a v-bind:href="config.telegram" target="_blank" class="nav-link link-dark px-2">
+                        <a v-bind:href="config.telegram" target="_blank" class="nav-link link-dark px-2" rel="noopener">
                             Telegram
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link-dark px-2 pe-0" target="_blank"
-                           href="https://github.com/kallydev/affman">
+                           href="https://github.com/kallydev/affman" rel="noopener">
                             GitHub
                         </a>
                     </li>
@@ -69,7 +69,9 @@
                             <div>
                                 <h3>{{ provider.name }}</h3>
                                 <p>{{ provider.description }}</p>
-                                <a class="btn btn-primary" target="_blank" v-bind:href="provider.url">立即注册</a>
+                                <a class="btn btn-primary" target="_blank" v-bind:href="provider.url" rel="noopener">
+                                    立即注册
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -82,8 +84,10 @@
             <div class="row">
                 <div class="col-12 col-md">
                     <small class="d-block mb-4 text-muted">
-                        Developed with <span class="text-danger">♥︎</span> by <a href="https://github.com/kallydev">KallyDev</a>.
-                        Licensed under the <a href="https://github.com/kallydev/affman/blob/main/LICENSE">MIT</a>.
+                        Developed with <span class="text-danger">♥︎</span> by
+                        <a href="https://github.com/kallydev" rel="noopener">KallyDev</a>.
+                        Licensed under the
+                        <a href="https://github.com/kallydev/affman/blob/main/LICENSE" rel="noopener">MIT</a>.
                     </small>
                 </div>
             </div>
